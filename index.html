@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calcula tu impacto</title>
+        <meta name="viewport" content="width=divice-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum_scale=1" />
+        <link rel="stylesheet" href="estilo.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="icon" href="img/favicon.png" />
+    </head>
+
+    <body>
+        <!-- Header de la web-->
+        <header class="bgimg">
+            <section class="navegacion">
+                <!-- Al apretar arriba lleva a la sección que indica usando identificadores de id-->
+                <h3><a class="nav-link" href="#Inicio">Inicio</a></h3>
+                <h3><a class="nav-link" href="#Calculadora">Calculadora</a></h3>
+                <h3><a class="nav-link" href="#Opciones">Opciones</a></h3>
+
+                <!-- Logo de la web-->
+                <article class="logo">
+                    <a href="index.html"><img src="img/favicon.png" alt="logo" /></a>
+                </article>
+            </section>
+
+            <div>
+                <!-- Sección de título con imagen de fondo-->
+                <div class="titulos">
+                    <h1>¿Sabes cuánto contaminas cada mes?</h1>
+                    <div class="contenedortextos">
+                        <h3 style="font-weight: 700;">El impacto ambiental de las toallitas higiénicas desechables</h3>
+                        <p><em>Un llamado a la conciencia femenina</em></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Fin del header-->
+
+        <!-- Sección de introducción-->
+        <section class="intro">
+            <p>
+                Priorizando la comodidad y practicidad, a menudo ignoramos las consecuencias ambientales de nuestros hábitos cotidianos. Cada mes, una mujer utiliza alrededor de 20 de estas toallitas, estas contienen materiales sintéticos
+                que tardan siglos en degradarse, además de contribuir a la contaminación del agua y el aire.
+            </p>
+
+            <p>
+                Si multiplicamos estas 20 toallitas higiénicas mensuales por la cantidad de mujeres en el mundo, teniendo en cuenta que cada una menstrua durante 40 años o más, el impacto ecológico se vuelve inmenso. Por esto, es de suma
+                importancia optar por alternativas más sostenibles y responsables con el medioambiente. ¡Tú tienes el poder de marcar la diferencia y construir un futuro más sustentable!
+            </p>
+        </section>
+        <!-- Fin introduccion-->
+
+        <!-- Sección de la caja con datos estadísticos-->
+        <section class="cajadatos">
+            <article class="dato">
+                <h4>100.000</h4>
+                <p>toneladas de basura en toallitas se genera al año</p>
+            </article>
+
+            <article class="dato">
+                <h4>94%</h4>
+                <p>de las toallitas producidas no son degradables</p>
+            </article>
+
+            <article class="dato">
+                <h4>40 a 45</h4>
+                <p>años menstrua una persona en promedio</p>
+            </article>
+
+            <article class="dato">
+                <h4>$126 mil</h4>
+                <p>anuales gasta una persona en un kit menstrual</p>
+            </article>
+        </section>
+        <!-- Fin de los datos-->
+
+        <!-- Sección de comparaciiones y calculadora -->
+        <section id="Comparaciones">
+            <article class="pregunta" id="Calculadora"> 
+                <h2 style="color: black; text-align: center;">¿Cuál es el impacto de tu uso de toallitas?</h2>
+                <h2 style="color: black; text-align: center;">¡Calcúlalo aquí!</h2>
+            </article>
+
+            <div class="input"> <!-- Cajas de input-->
+                <input type="number" id="first_age" placeholder=" Edad primera regla" /> 
+                <input type="number" id="actual_age" placeholder=" Edad actual" />
+                <button onclick="fetch_info()">Resultados</button> <!-- Llamado al js -->
+            </div>
+
+            <article class="pregunta">
+                <h2 style="color: black">Entonces, la cantidad de toallitas usadas a lo largo de tu vida equivalen a la altura de:</h2>
+            </article>
+
+            <!-- Acá se despliega la foto que tira el JS con el id "graphic"-->
+            <img id="graphic"></img>
+            
+            
+            <p class="comparacion">Esto lo medimos en base a la altura de diferentes edificios en Chile. Calculamos el largo de una toallita promedio y sumamos el total de metros para sacar la relación con las torres. Para hacer una comparación, este es el porte de una persona de 1,60 mts al lado de los edificios:</p>
+            
+            <!-- Aquí va la foto de la comparación de dimensiones-->
+            <img class="img-comparacion" src="img/diagrama.png" />
+
+            <h4 class="cierre" style="text-align: center;">Tenemos el poder de marcar la diferencia y contribuir a construir un futuro más sustentable. Juntas, podemos tomar decisiones informadas y promover un cambio significativo hacia la protección de nuestro planeta.</h4>
+        </section>
+        <!-- Fin sección de comparaciiones y calculadora-->
+
+        <!-- Sección de galería con opciones más sustentables-->
+        <article class="opciones" id="Opciones">
+            <!-- Introduccion-->
+            <h2 style="color: black; text-align: center;">Si buscas disminuir tu impacto, te invitamos a revisar estas opciones más sustentables:</h2>
+            <!-- Galería en cajitas-->
+            <div class="galeria">
+                <article>
+                    <img src="img/productos-1.png" />
+                    <h4><a href="https://mialuna.cl/" style="text-decoration: none; color: #dd4a6a;">Mia Luna</a></h4>
+                    <p>Copas menstruales</p>
+                </article>
+                <article>
+                    <img src="img/productos-2.png" />
+                    <h4><a href="https://culotte.cl/" style="text-decoration: none; color: #dd4a6a;">Culotte</a></h4>
+                    <p>Calzones menstruales</p>
+                </article>
+                <article>
+                    <img src="img/productos-3.png" />
+                    <h4><a href="https://aukymia.cl/" style="text-decoration: none; color: #dd4a6a;">Aukymia</a></h4>
+                    <p>Toallas ecológicas reutilizables</p>
+                </article>
+            </div>
+        </article>
+        <!-- Fin sección de galería con opciones más sustentables-->
+
+        <!-- Footer con info del proyecto-->
+        <footer>
+            <section class="footer">
+                <dl class="curso">
+                    <h4>Proyecto 2</h4>
+                    <dt>Curso</dt>
+                    <dd>Programación Creativa</dd>
+                    <dt>Profesor</dt>
+                    <dd>Ricardo Vega</dd>
+                </dl>
+
+                <article class="integrantes">
+                    <h4>Integrantes</h4>
+                    <ul>
+                        <li>María Ignacia Ariztía</li>
+                        <li>Nicolás Barria</li>
+                        <li>Margarita Matte</li>
+                        <li>Magdalena Muñoz</li>
+                        <li>Trinidad Pacheco</li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+
+        <!-- Link al script-->
+        <script src="index.js"></script>
+    </body>
+</html>
